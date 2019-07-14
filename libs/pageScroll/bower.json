@@ -1,0 +1,40 @@
+{
+  "name": "page-scroll-to-id",
+  "title": "Page scroll to id",
+  "description": "jQuery plugin that enables smooth page scrolling to specific id within the document.",
+  "main": "./jquery.malihu.PageScroll2id.js",
+  "keywords": [
+    "jquery-plugin",
+    "page-scrolling",
+    "page-animation",
+    "navigation",
+    "single-page-navigation",
+    "smooth-scrolling"
+  ],
+  "homepage": "http://manos.malihu.gr/page-scroll-to-id/",
+  "author": {
+    "name": "malihu",
+    "url": "http://manos.malihu.gr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/malihu/page-scroll-to-id.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.7"
+  },
+  "ignore": [
+    "*.md",
+    ".*",
+    "*.txt",
+    "*.json",
+    "/js",
+    "/examples"
+  ]
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- styles -->
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<!-- fancybox -->
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+	<!-- user style -->
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+
+	<!-- fonts -->
+	<link rel="stylesheet" href="fonts/noto/noto.css">
+	<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+
+	<!-- title -->
+	<title>Personal Page</title>
+	<meta name="keywords" content="заказать верстку, кроссбраузерная верстка">
+    <meta name="description" content="Верстка сайтов">
+
+</head>
+<body>
+	<!-- header -->
+	<header class="header text-center">
+		<div class="container">
+			<!-- navigation -->
+			<nav class="navigation">
+				<!-- button-toggle -->
+				<button id="navigation__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
+  					<span>toggle menu</span>
+				</button>
+				<!-- navigation-list -->
+				<ul class="navigation__list">
+					<li><a href="#summary">резюме</a></li>
+					<li><a href="#portfolio">портфолио</a></li>
+					<li><a href="#contacts">контакты</a></li>
+				</ul>
+			</nav>
+
+			<!-- header content -->
+			<div class="center-align">
+				<div class="user-photo user-photo--shadow">
+					<img src="user-content/user-photo/user-photo_110.jpg" alt="Андрей Белявский">
+				</div>
+				<h1 class="header__title">Андрей Белявский</h1>
+				<h2 class="header__subtitle">HTML верстальщик сайтов</h2>
+			</div>
+
+			<!-- mouse_scroll -->
+			<a class="mouse_scroll" href="#summary">
+				<div class="mouse">
+					<div class="wheel"></div>
+				</div>
+				<div>
+					<span class="m_scroll_arrows unu"></span>
+					<span class="m_scroll_arrows doi"></span>
+					<span class="m_scroll_arrows trei"></span>
+				</div>
+			</a>
+			
+		</div>
+	</header>
+
+	<!-- summary -->
+	<div class="summary section section--line section--bg-laptop" id="summary">
+		<div class="container">
+			<div class="row">
+				<div class="d-none d-md-block col-md-2 col-xl-3">
+					<div class="user-photo user-photo--big">
+						<img src="user-content/user-photo/user-photo_205.jpg" alt="Андрей Белявский">
+					</div>
+				</div>
+				<div class="col-md-10 col-xl-8">
+					<div class="heading">Резюме</div>
+					<div class="summary__name">Андрей Белявский</div>
+					<p class="summary__text">30 лет, Воронеж, Россия</p>
+					<p class="summary__text">Закончил курсы по верстке сайтов. После чего активно занимаюсь самообразованием.</p>
+					<div class="row">
+
+						<!-- experience -->
+						<div class="col-md-6 col-xl-6">
+							<div class="experience-list__heading">Технологии</div>
+							<ul class="experience-list">
+								<li>
+									<div class="experience-list__desc">
+										HTML5 и CSS3: кроссбраузерная, мобильная, адаптивная верстка.
+									</div>
+								</li>
+								<li>
+									<div class="experience-list__desc">
+										Работа с Photoshop. Оптимизация графики и скорости загрузки.
+									</div>
+								</li>
+								<li>
+									<div class="experience-list__desc">
+										Базовые знания Javascript, jQuery, Ajax, PHP.
+									</div>
+								</li>
+								<li>
+									<div class="experience-list__desc">
+										Фреймворк Bootstrap, CSS препроцессор LESS, методология БЭМ.
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<!-- education -->
+						<div class="col-md-6 col-xl-6">
+							<div class="experience-list__heading">Образование</div>
+							<ul class="experience-list">
+								<li>
+									<div class="experience-list__title">
+										июнь 2019
+									</div>
+									<div class="experience-list__desc">
+										Курсы по верстке сайтов HTML5, CSS3 - WebCademy.ru
+									</div>
+								</li>
+								<li>
+									<div class="experience-list__title">
+										2006 — 2011
+									</div>
+									<div class="experience-list__desc">
+										Воронежский государственный архитектурно-строительный университет
+										Городское строительство и хозяйство
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a class="button" href="user-content/pdf/summary.pdf" download><i class="fas fa-download"></i>Скачать резюме</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- portfolio -->
+	<div class="portfolio section section--bg-gear section--pb-small" id="portfolio">
+		<div class="container">
+			<!-- heading -->
+			<div class="heading heading--center">Мои работы</div>
+
+			<!-- filter works -->
+			<div class="filter-block">
+				<ul class="filter-block__block">
+					<li class="filter-block__element">
+						<span class="filter-block__button filter-btn" data-filter="all">все</span>
+					</li>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter-btn control" data-filter=".html-css">HTML+CSS</span>
+					</li>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter-btn" data-filter=".bootstrap">Bootstrap</span>
+					</li>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter-btn" data-filter=".tutorial">учебные</span></li>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter-btn" data-filter=".to-order">на заказ</span>
+					</li>
+				</ul>
+			</div>
+			<!-- works -->
+			<div class="row" id="works">
+				<!-- work 1 -->
+				<div class="col-md-4 mix html-css tutorial">
+					<div class="portfolio-item">
+						<div class="portfolio-item__image">
+								<a data-fancybox="gallery" data-caption="Учебный макет Organica" href="user-content/works-full/organic.jpg" title="Учебный макет Organica" class="portfolio-item__image__hover">
+									<i class="fas fa-search"></i>
+									<span>Смотреть макет</span>
+								</a>
+								<img src="user-content/works/project_organica.jpg" alt="Учебный макет Organica">
+						</div>
+						<div class="portfolio-item__title">
+							<a href="http://organica.snow-bird.ru/" target="_blank" title="Перейти на сайт organica.snow-bird.ru/">Учебный макет Organica</a>
+						</div>
+						<div class="portfolio-item__desc">
+							Верстка одностраничного сайта по PSD макету
+						</div>
+					</div>
+				</div>
+				<!-- work 2 -->
+				<div class="col-md-4 mix bootstrap tutorial">
+					<div class="portfolio-item">
+						<div class="portfolio-item__image">
+							<a data-fancybox="gallery" data-caption="Учебный макет Аполло" href="user-content/works-full/apollo.jpg" title="Учебный макет Аполло" class="portfolio-item__image__hover">
+								<i class="fas fa-search"></i>
+								<span>Смотреть макет</span>
+							</a>
+							<img src="user-content/works/project_apollo.jpg" alt="Учебный макет Аполло">
+						</div>
+						<div class="portfolio-item__title">
+							<a href="http://apollo.snow-bird.ru/" target="_blank" title="Перейти на сайт apollo.snow-bird.ru/">Учебный макет Аполло</a>
+						</div>
+						<div class="portfolio-item__desc">
+							Верстка лендинга хостинг компании. Мобильная адаптивность.
+						</div>
+					</div>
+				</div>
+				<!-- work 3 -->
+				<div class="col-md-4 mix bootstrap tutorial">
+					<div class="portfolio-item">
+						<div class="portfolio-item__image">
+							<a data-fancybox="gallery" data-caption="Личный сайт портфолио" href="user-content/works-full/portfolio.jpg" title="Личный сайт портфолио" class="portfolio-item__image__hover">
+								<i class="fas fa-search"></i>
+								<span>Смотреть макет</span>
+							</a>
+							<img src="user-content/works/project_portfolio.jpg" alt="Личный сайт портфолио">
+						</div>
+						<div class="portfolio-item__title">
+							<a href="#top" >Личный сайт портфолио</a>
+						</div>
+						<div class="portfolio-item__desc">
+							Верстка личного сайта портфолио на котором вы сейчас находитесь. 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- contacts -->
+	<div class="contacts section section--bg-cloud section--pb-contacts" id="contacts">
+		<div class="container">
+			<div class="row">
+
+				<!-- contacts-text -->
+				<div class="col-md-6">
+					<div class="heading heading--white">
+						Контакты
+					</div>
+					<div class="contacts__desc">
+						<p>Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  я к вашим услугам.</p>
+					</div>
+					<!-- contact details -->
+					<div class="row">
+
+						<div class="col-xl-6">
+							<ul class="contacts-list">
+								<li>
+									<div class="contacts-list__title">
+										Email
+									</div>
+									<div class="contacts-list__desc">
+										<a href="mailto:and.beliavsky@gmail.com">and.beliavsky@gmail.com</a>
+									</div>
+								</li>
+								<li>
+									<div class="contacts-list__title">
+										skype
+									</div>
+									<div class="contacts-list__desc">
+										<a href="skype:raut_bel?chat">raut_bel</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-xl-6">
+							<ul class="contacts-list contacts-list--pl-17">
+								<li>
+									<div class="contacts-list__title">
+										телефон
+									</div>
+									<div class="contacts-list__desc">
+										<a href="tel:+79192326296">+7 (919) 232 62 96</a>
+									</div>
+								</li>
+								<li>
+									<div class="contacts-list__title">
+										адрес
+									</div>
+									<div class="contacts-list__desc">
+										Россия, Воронеж
+									</div>
+								</li>
+							</ul>	
+						</div>
+					</div>
+					<!-- social -->
+					<ul class="contacts-list">
+						<li>
+							<div class="contacts-list__title">
+								Социальные сети
+							</div>
+							<div class="social-icon">
+								<a href="https://vk.com/snow_bird777" target="_blank"><i class="fab fa-vk"></i></a>
+								<a href="https://github.com/snowbird777" target="_blank"><i class="fab fa-github"></i></a>
+								<!-- <a href="#"><i class="fab fa-instagram"></i></a>
+								<a href="#"><i class="fab fa-facebook-f"></i></a> -->
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<!-- contacts-form -->
+				<div class="col-md-6">
+
+					<div class="contact-form__title">Связаться со мной</div>
+					<form id="contact-form" class="contact-form" action="php/mail.php" method="POST">
+
+						<input type="hidden" name="project_name" value="Мой персональный сайт">
+						<input type="hidden" name="form_from" value="snow-bird.ru">
+						<input type="hidden" name="admin_email" value="and.beliavsky@gmail.com">
+						<input type="hidden" name="form_subject" value="Сообщение с сайта">
+
+						<input class="contact-form__input" type="text" name="name" placeholder="Имя">
+						<input class="contact-form__input" type="text" name="email" placeholder="some@mail.com">
+						<div class="clearfix">
+							<input class="contact-form__input contact-form__input--half-width" type="text" name="skype" placeholder="Skype">
+							<input class="contact-form__input contact-form__input--half-width" type="text" name="phone" placeholder="Телефон">
+						</div>
+
+						<div class="contact-form__bg-pencil">
+							<textarea class="contact-form__textarea" name="message" placeholder="Ваше сообщение"></textarea>
+						</div>
+						<input class="contact-form__submit" type="submit" value="Отправить">
+						
+					</form>
+
+					<div id="answer"></div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- copyright -->
+	<div class="copyright">
+		<div class="container">
+			<p class="copyright__title">© 2019 Андрей Белявский</p>
+			<p>Веб-разработик из Воронежа, занимаюсь версткой и созданием сайтов.</p>
+			<p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a href="http://webcademy.ru/" target="_blank">WebCademy.ru</a> </p>
+		</div>
+	</div>
+
+	<!-- vendor script -->
+	<script src="libs/jQuery/jquery-3.4.1.min.js"></script>
+	<script src="libs/pageScroll/js/minified/jquery.malihu.PageScroll2id.min.js"></script>
+	<script src="libs/mixitup/mixitup.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+	<script src="libs/jquery-validation/jquery.validate.min.js"></script>
+
+	<!-- user script -->
+	<script src="js/navigation.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

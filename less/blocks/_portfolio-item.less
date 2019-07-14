@@ -1,0 +1,144 @@
+.portfolio-item {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	width: 290px;
+
+	@media (min-width: 576px) {
+		width: 360px;
+	}
+	@media (min-width: 768px){
+		width: 210px;
+	}
+	@media (min-width: 992px){
+		width: 290px;
+	}
+	@media (min-width: 1200px){
+		width: 350px;
+	}
+}
+
+.portfolio-item__image {
+	// position
+	position: relative;
+	// block model
+	display: block;
+	margin-bottom: 15px;
+	width: 290px;
+	height: 200px;
+	// style
+	background-image: url(../img/images/project_placeholder.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	// other
+	overflow: hidden;
+	
+	@media (min-width: 576px) {
+		width: 360px;
+		height: 250px;
+	}
+	@media (min-width: 768px){
+		width: 210px;
+		height: 145px;
+	}
+	@media (min-width: 992px){
+		width: 290px;
+		height: 200px;
+	}
+	@media (min-width: 1200px){
+		width: 350px;
+		height: 240px;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.portfolio-item__image__hover {
+	// position
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	// block model
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	// typo
+	color: #fff;
+	font-size: 26px;
+	text-align: center;
+	// style
+	background-color: rgba(0, 82, 194, 0.90);
+	transition: top 0.5s ease-out;
+	overflow: hidden;
+	opacity: 0;
+
+	@media (min-width: 1200px) {
+		top: 100%;
+		opacity: 1;
+	}
+
+	&:hover {
+		color: #fff;
+		text-decoration: none;
+	}
+	.fas {
+		font-size: 64px;
+	}
+	span {
+		font-size: 26px;
+	}
+}
+
+.portfolio-item__image:hover .portfolio-item__image__hover {
+	@media (min-width: 1200px) {
+		top: 0;
+		display: flex;
+		padding-top: 0;
+	}
+}
+
+.portfolio-item__title {
+	// block model
+	margin-bottom: 10px;
+	// typo
+	font-size: 20px;
+	font-weight: 700;
+
+	@media (min-width: 1200px) {
+		font-size: 24px;
+	}
+
+	a {
+		color: #000;
+		text-decoration: none;
+		transition: all 0.3s ease-in;
+		
+
+		@media (min-width: 1200px) {
+			border-bottom: 1px dotted #000;
+		}
+		
+		&:hover,
+		&:focus,
+		&:active {
+			color: @blue;
+			border-color: @blue;
+		}
+	}
+}
+
+.portfolio-item__desc {
+	font-size: 14px;
+	line-height: 20px;
+
+	@media (min-width: 1200px) {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}

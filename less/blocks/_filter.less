@@ -1,0 +1,74 @@
+.filter-block {
+	// block model
+	padding-top: 20px;
+	padding-bottom: 20px;
+	// typo
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	@media (min-width: 768px) {
+		padding-top: 0;
+		margin-bottom: 30px;
+	}
+	@media (min-width: 1200px) {
+		margin-bottom: 25px;
+	}
+}
+.filter-block__block {
+	text-align: center;
+
+	@media (min-width: 768px) {
+		padding-top: 10px;
+	}
+}
+.filter-block__element {
+	display: block;
+
+	&:last-child .filter-block__button {
+		margin-bottom: 0;
+		margin-right: 0;
+	}
+	
+	@media (min-width: 768px) {
+		display: inline-block;
+	}
+
+}
+.filter-block__button {
+	// block model
+	display: inline-block;
+	padding-top: 7px;
+	padding-left: 23px;
+	padding-right: 23px;
+	padding-bottom: 6px;
+	margin-bottom: 8px;
+	// typo
+	color: #cecece;
+	// style
+	border: 2px solid #fff;
+	// other
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+
+
+	@media (min-width: 768px) {
+		padding-top: 9px;
+		padding-left: 28px;
+		padding-right: 28px;
+		padding-bottom: 13px;
+	}
+	@media (min-width: 1200px) {
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-right: 12px;
+	}
+
+	&:hover {
+		color: #000;
+	}
+}
+.mixitup-control-active {
+	color: #000;
+	border-color: @blue;
+}

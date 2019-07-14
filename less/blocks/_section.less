@@ -1,0 +1,54 @@
+.section {
+	padding-top: 37px;
+	padding-bottom: 35px;
+	
+	@media (min-width: 768px) {
+		padding-top: 55px;
+		padding-bottom: 60px;
+	}
+	@media (min-width: 1200px) {
+		padding-top: 84px;
+		padding-bottom: 90px;
+	}
+	&--pb-small {
+		padding-bottom: 10px;
+		@media (min-width: 768px) {
+			padding-bottom: 20px;
+		}
+		@media (min-width: 1200px) {
+			padding-bottom: 50px;
+		}
+	}
+
+	&--pb-contacts {
+		padding-bottom: 50px;
+	}
+}
+
+.section--line {
+	border-bottom: 1px solid #e9eff3;
+}
+
+.section--bg-laptop {
+	@media (min-width: 1400px){
+		background-repeat: no-repeat;
+		background-position: right 70%;
+		background-image: url("../img/images/laptop.png");
+	}
+}
+
+.section--bg-gear {
+	@media (min-width: 1400px){
+		background-repeat: no-repeat;
+		background-position: left 55%;
+		background-image: url("../img/images/gear.png");
+	}
+}
+
+.section--bg-cloud {
+	@media (min-width: 1400px){
+		background-repeat: no-repeat;
+		background-position: right 70%;
+		background-image: url("../img/images/cloud.png");
+	}
+}

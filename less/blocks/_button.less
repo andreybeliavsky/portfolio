@@ -1,0 +1,36 @@
+.button {
+	// block model
+	display: inline-block;
+	padding-top: 11px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 14px;
+	// typo
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	// style
+	border-radius: 60px;
+	background-color: @blue;
+  	box-shadow: 0px 3px 15px 0px rgba(0, 82, 194, 0.5);
+	// other
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		background-color: #fff;
+		color: @blue;
+	}
+	&:active {
+		background-color: @blue;
+		color: @yellow;
+	}
+	
+	.fas {
+		font-size: 18px;
+		margin-right: 5px;
+	}
+}

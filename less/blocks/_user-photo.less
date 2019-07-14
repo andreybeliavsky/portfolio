@@ -1,0 +1,29 @@
+.user-photo {
+	// block model
+	width: 110px;
+	height: 110px;
+	margin-right: auto;
+	margin-left: auto;
+	// style
+	border-radius: 50%;
+	overflow: hidden;
+	background-image: url("../img/images/placeholder_110.jpg");
+	background-size: contain;
+
+	&--big {
+		width: 95px;
+		height: 95px;
+
+		@media (min-width: 1200px) {
+			background-image: url("../img/images/placeholder_205.jpg");
+			width: 205px;
+			height: 205px;
+		}
+	}
+}
+
+.user-photo--shadow {
+	box-shadow: 0px 0px 40px 0px rgba(72, 119, 159, 1);
+}
+
+
