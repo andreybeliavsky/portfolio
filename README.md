@@ -10,4 +10,4 @@
 * PHP
 * Ajax
 ## Демо
-<http://snow-bird.ru/>
+<https://andreybeliavsky.ru/>
